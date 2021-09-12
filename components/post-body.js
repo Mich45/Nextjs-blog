@@ -11,7 +11,6 @@ export default function PostBody({ content }) {
     if (node) {
       const nodes = node.current.querySelector('pre');
       hljs.highlightAll(nodes);
-      console.log(nodes);
     }
   });
 

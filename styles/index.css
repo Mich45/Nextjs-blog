@@ -1,6 +1,17 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+@layer base {
+  @font-face {
+    font-family: 'Futura';
+    font-weight: 300;
+    src: local('Futura') url('/public/fonts/futura-pt-book.otf')
+      format('opentype');
+  }
+}
+body {
+  @apply font-sans text-xl;
+}
 
 /* Start purging... */
 @tailwind components;
